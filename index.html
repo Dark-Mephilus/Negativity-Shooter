@@ -1,0 +1,53 @@
+<!--Negativity Shooting Game (HTML Part)-->
+<!-- A Responsive Arcade Game where the player gains points by shooting negativity and dodging incoming attacks from enemies. -->
+ <!-- Program by Dark Mephilus -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Negativity Shooting Game by Zidaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+</head>
+<!--Body Part-->
+<body>
+    <button id="infoButton" class="info-btn">i</button>
+    <!-- Info Modal having instructions to install the game-->
+    <div id="infoModal" class="info-modal">
+        <h3>📲 How to Install it on your Device</h3>
+        <p>
+            <strong class="phone-heading">For Phone:</strong><br>
+            1. Tap the ⋮ (three dots) on your browser<br>
+            2. Tap “Add to Home screen”<br>
+            3. Confirm to install
+        </p>
+        <p>
+            <strong class="desktop-heading">For Desktop:</strong><br>
+            1. Click the install icon in the address bar if visible<br>
+            OR<br>
+            1. Click on the ⋮ (three dots) in the top right<br>
+            2. Scroll down carefully<br>
+            3. Click on (Cast/Save/Share) option and click “Install Negativity Shooting Game”
+        </p>
+        <div style="text-align:center;">
+            <button onclick="closeInfoModal()" class="close-btn">Close</button>
+        </div>
+    </div>
+    <!-- Game Container -->
+    <div id="game-container">
+        <button id="quitBtn">End Game</button>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <!-- Mobile Controls -->
+        <div id="mobile-controls">
+            <button class="control-btn" id="btnLeft">◀ LEFT</button>
+            <button class="control-btn shoot-btn" id="btnShoot">🎯 SHOOT</button>
+            <button class="control-btn" id="btnRight">RIGHT ▶</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!--End of Program-->
