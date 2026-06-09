@@ -299,7 +299,7 @@ function drawFrame() {
         canvasContext.fillText("PC: Arrows & Space | Phone: Buttons", centerX, centerY + 80);   
         canvasContext.fillStyle = "#0ef"; 
         canvasContext.font = "bold 28px Arial"; 
-        canvasContext.fillText("A Game by Zidaan", centerX, centerY + 130); 
+        canvasContext.fillText("A Game by Dark Mephilus", centerX, centerY + 130); 
         canvasContext.globalAlpha = 1.0;
     } else if (showGameOver) {
         canvasContext.fillStyle = "#ffffff";
@@ -331,11 +331,6 @@ if ('serviceWorker' in navigator) {
     });
 }
 // Security features with taunts
-// Funny taunt on right click
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-  alert("😏 No right click! Thought you were smart, huh?");
-});
 // Funny taunt on F12 and other DevTools keys
 document.addEventListener('keydown', function (e) {
   if (e.key === "F12" || e.keyCode === 123) {
